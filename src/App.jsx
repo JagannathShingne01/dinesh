@@ -14,11 +14,16 @@ import Cta from "./components/cta";
 const App = () => {
   return (
     <div>
-      <NavCta/>
+       <head>
+      <link rel="icon" href="" />
+        <title>Prohealth Plus Multispeciality</title>
+      <meta name="description" content="My expertise is in creating visually appealing web pages and providing an outstanding user
+            experience" />
+      </head>
       <Navbar />
 
       <main>
-        <div id="home">
+        <div id="home" className="">
           {/* <Home /> */}
           <Hero/>
         </div>
@@ -34,6 +39,7 @@ const App = () => {
         <div id="doctors">
           <Doctors />
         </div>
+       
 
         <div id="blog">
           <Blogs />

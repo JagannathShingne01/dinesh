@@ -11,11 +11,11 @@ const NavCta = () => {
             email: jagannath@gmail.com</p>
         <p className="mt-3 flex">
           <FiPhoneCall className="mt-1 mr-1"/>
-          Helpline +91 48435 97683
+          Helpline +91 08047186782
         </p>
         <p className="mt-3 flex">
           <IoTimeOutline className="mt-1 mr-1"/>
-          Mon - Sat 9:00 to 5:00
+          Mon - Sat 11:00 AM to 9:00 PM
         </p>
       </div>
     </div>

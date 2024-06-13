@@ -13,10 +13,10 @@ const Blogs = () => {
     <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-24">
       <div className=" flex flex-col items-center lg:flex-row justify-between">
         <div>
-          <h1 className=" text-4xl font-semibold text-center lg:text-start">
+          <h1 className="text-5xl text-brightColor mx-12 font-semibold text-center lg:text-start">
             Latest Post
           </h1>
-          <p className=" mt-2 text-center lg:text-start">
+          <p className="mx-12 mt-2 text-center lg:text-start">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
             quidem.
           </p>

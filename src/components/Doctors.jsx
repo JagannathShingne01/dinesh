@@ -9,13 +9,15 @@ const Doctors = () => {
   const data = [
     {
       img: "/src/assets/img/doc1.jpg",
-      name: "Dr. Serena Mitchell",
+      name: "Dr. Ranjitha G Babu",
       specialties: "Orthopedic Surgeon",
+      special:"Gynecologist,Obstetrician,Laparoscopic Surgeon (Obs & Gyn),Infertility Specialist 18 Years Experience Overall  (13 years as specialist)"
     },
     {
       img: "/src/assets/img/doc2.jpg",
-      name: "Dr. Julian Bennett",
+      name: "Dr. Sunil Kumar. V",
       specialties: "Cardiologist",
+      special:"General Surgeon,Bariatric Surgeon,Laparoscopic Surgeon,Proctologist 19 Years Experience Overall  (11 years as specialist)"
     },
     {
       img: "/src/assets/img/doc3.jpg",
@@ -80,12 +82,12 @@ const Doctors = () => {
 
   return (
     <div className=" min-h-screen flex flex-col justify-center lg:px-32 px-5 pt-16">
-      <div className=" flex flex-col items-center lg:flex-row justify-between mb-10 lg:mb-0">
+      <div className=" flex flex-col items-center lg:flex-row  justify-between mb-10 lg:mb-0">
         <div>
-          <h1 className=" text-4xl font-semibold text-center lg:text-start">
+          <h1 className="lg:mx-12 text-5xl text-brightColor font-semibold text-center lg:text-start">
             Our Doctors
           </h1>
-          <p className=" mt-2 text-center lg:text-start">
+          <p className="lg:mx-12 mt-2 text-center lg:text-start">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
             quidem.
           </p>
@@ -105,26 +107,22 @@ const Doctors = () => {
           </button>
         </div>
       </div>
-      <div className=" mt-5">
+      <div className="mx-12 mt-20">
         <Slider ref={slider} {...settings}>
           {data.map((e, index) => (
-            <div
-              className="h-[350px] text-black rounded-xl shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] mb-2 cursor-pointer"
-              key={index}
-            >
+            <> 
+            
+            <div key={index} className="h-[400px] bg-brightColor/10 ">
               <div>
-                <img
-                  src={e.img}
-                  alt="img"
-                  className=" h-56 rounded-t-xl w-full"
-                />
+              <img src={e.img} alt={e.name} className="h-60 w-full rounded-t-lg"/>
               </div>
+              <h1 className="text-3xl font-semibold text-center mt-3">{e.name}</h1>
+              <h1 className="text-xl text-primary font-semibold text-center">{e.specialties}</h1>
 
-              <div className=" flex flex-col justify-center items-center">
-                <h1 className=" font-semibold text-xl pt-4">{e.name}</h1>
-                <h3 className=" pt-2">{e.specialties}</h3>
-              </div>
+              <p className="text-xs text-center px-4 mt-2">{e.special}</p>
             </div>
+            </>
+           
           ))}
         </Slider>
       </div>
@@ -133,3 +131,27 @@ const Doctors = () => {
 };
 
 export default Doctors;
+
+
+
+
+
+
+
+// <div
+//               className="h-[350px] text-black rounded-xl  mb-2 cursor-pointer"
+//               key={index}
+//             >
+//               <div>
+//                 <img
+//                   src={e.img}
+//                   alt="img"
+//                   className=" h-56 rounded-t-xl w-full"
+//                 />
+//               </div>
+
+//               <div className=" flex flex-col justify-center items-center">
+//                 <h1 className=" font-semibold text-xl pt-4">{e.name}</h1>
+//                 <h3 className=" pt-2">{e.specialties}</h3>
+//               </div>
+//             </div>
