@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import NavCta from "./components/NavCta";
 import Hero from "./components/Hero";
+import Cta from "./components/cta";
 
 const App = () => {
   return (
@@ -21,11 +22,11 @@ const App = () => {
           {/* <Home /> */}
           <Hero/>
         </div>
-
+        
         <div id="about">
           <About />
         </div>
-
+        <Cta/>
         <div id="services">
           <Services />
         </div>
