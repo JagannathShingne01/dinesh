@@ -24,8 +24,8 @@ const Services = () => {
       <div className=" flex flex-col items-center lg:flex-row justify-between">
         <div className="lg:mx-12">
           <h1 className="text-brightColor text-4xl lg:text-5xl font-semibold text-center flex gap-2">
-          <MdMedicalServices className="text-brightColor text-5xl " />
-          Our Services
+            <MdMedicalServices className="text-brightColor text-5xl " />
+            Our Services
           </h1>
           <p className=" mt-2 text-center lg:text-start">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus,
